@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    function checkPassword() {
+      const password = prompt("Enter password to access:");
+      if (password !== "pass2390") {
+        alert("Wrong password! Redirecting...");
+        window.location = "https://google.com"; // Redirect if wrong
+      }
+    }
+  </script>
+</head>
+<body onload="checkPassword()">
+  <h1>Welcome to My Portfolio</h1>
+  <p>This is my private portfolio. Only people with the password can see this.</p>
+  <!-- Add your portfolio content here -->
+</body>
+</html>
